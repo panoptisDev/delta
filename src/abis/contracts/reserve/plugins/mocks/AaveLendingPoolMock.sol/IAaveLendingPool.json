@@ -1,0 +1,24 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAaveLendingPool",
+  "sourceName": "contracts/reserve/plugins/mocks/AaveLendingPoolMock.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getAddressesProvider",
+      "outputs": [
+        {
+          "internalType": "contract ILendingPoolAddressesProvider",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

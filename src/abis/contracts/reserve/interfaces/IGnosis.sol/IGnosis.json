@@ -1,0 +1,203 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IGnosis",
+  "sourceName": "contracts/reserve/interfaces/IGnosis.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "auctionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "auctionData",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "contract IERC20",
+              "name": "auctioningToken",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IERC20",
+              "name": "biddingToken",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "orderCancellationEndDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "auctionEndDate",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "initialAuctionOrder",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minimumBiddingAmountPerOrder",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "interimSumBidAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "interimOrder",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "clearingPriceOrder",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint96",
+              "name": "volumeClearingPriceOrder",
+              "type": "uint96"
+            },
+            {
+              "internalType": "bool",
+              "name": "minFundingThresholdNotReached",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isAtomicClosureAllowed",
+              "type": "bool"
+            },
+            {
+              "internalType": "uint256",
+              "name": "feeNumerator",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "minFundingThreshold",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct GnosisAuctionData",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "feeNumerator",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "auctioningToken",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IERC20",
+          "name": "biddingToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "orderCancellationEndDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "auctionEndDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint96",
+          "name": "auctionedSellAmount",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint96",
+          "name": "minBuyAmount",
+          "type": "uint96"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minimumBiddingAmountPerOrder",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "minFundingThreshold",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isAtomicClosureAllowed",
+          "type": "bool"
+        },
+        {
+          "internalType": "address",
+          "name": "accessManagerContract",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "accessManagerContractData",
+          "type": "bytes"
+        }
+      ],
+      "name": "initiateAuction",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "auctionId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "auctionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "settleAuction",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "encodedOrder",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

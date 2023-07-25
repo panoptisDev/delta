@@ -1,0 +1,157 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IFurnace",
+  "sourceName": "contracts/reserve/interfaces/IFurnace.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint48",
+          "name": "oldPeriod",
+          "type": "uint48"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint48",
+          "name": "newPeriod",
+          "type": "uint48"
+        }
+      ],
+      "name": "PeriodSet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "uint192",
+          "name": "oldRatio",
+          "type": "uint192"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint192",
+          "name": "newRatio",
+          "type": "uint192"
+        }
+      ],
+      "name": "RatioSet",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IMain",
+          "name": "main_",
+          "type": "address"
+        },
+        {
+          "internalType": "uint48",
+          "name": "period_",
+          "type": "uint48"
+        },
+        {
+          "internalType": "uint192",
+          "name": "ratio_",
+          "type": "uint192"
+        }
+      ],
+      "name": "init",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "main",
+      "outputs": [
+        {
+          "internalType": "contract IMain",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "melt",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "period",
+      "outputs": [
+        {
+          "internalType": "uint48",
+          "name": "",
+          "type": "uint48"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ratio",
+      "outputs": [
+        {
+          "internalType": "uint192",
+          "name": "",
+          "type": "uint192"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint48",
+          "name": "",
+          "type": "uint48"
+        }
+      ],
+      "name": "setPeriod",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint192",
+          "name": "",
+          "type": "uint192"
+        }
+      ],
+      "name": "setRatio",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,40 @@
+import { useWeb3React } from '@web3-react/core'
+import { Connector } from '@web3-react/types'
+import { metaMask, network } from 'components/wallets/connectors'
+import { useSetAtom } from 'jotai'
+import { useEffect } from 'react'
+import { walletAtom } from 'state/atoms'
+import { ADDRESS_STORAGE } from 'state/storage'
+
+const connect = async (connector: Connector) => {
+  try {
+    if(connector.connectEagerly) {
+      await connector.connectEagerly()
+    } else {
+      await connector.activate()
+    }
+  } catch (error) {
+    console.debug(`web3-react eager connection error: ${error}`)
+  }
+}
+
+const WalletUpdater = () => {
+  const { account } = useWeb3React()
+  const setConnected = useSetAtom(walletAtom)
+
+  // TODO: Perfect place to program wallet popups
+  useEffect(() => {
+    localStorage.setItem(ADDRESS_STORAGE, account ?? "")
+    setConnected(account ?? '')
+  }, [account])
+
+  // TODO: Smart wallet connection using cache
+  useEffect(() => {
+    connect(network)
+    connect(metaMask)
+  }, [])
+
+  return null
+}
+
+export default WalletUpdater

@@ -1,0 +1,46 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IBiddable",
+  "sourceName": "contracts/reserve/plugins/mocks/GnosisMock.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "auctionId",
+          "type": "uint256"
+        },
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "bidder",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "sellAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "buyAmount",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct Bid",
+          "name": "bid",
+          "type": "tuple"
+        }
+      ],
+      "name": "placeBid",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

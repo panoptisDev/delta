@@ -1,0 +1,48 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IFacadeAct",
+  "sourceName": "contracts/reserve/interfaces/IFacadeAct.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract RTokenP1",
+          "name": "rToken",
+          "type": "address"
+        }
+      ],
+      "name": "claimAndSweepRewards",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract RTokenP1",
+          "name": "rToken",
+          "type": "address"
+        }
+      ],
+      "name": "getActCalldata",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "calldata_",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

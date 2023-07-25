@@ -1,0 +1,246 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IAssetRegistry",
+  "sourceName": "contracts/reserve/interfaces/IAssetRegistry.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "contract IERC20",
+          "name": "erc20",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "contract IAsset",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "AssetRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "contract IERC20",
+          "name": "erc20",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "contract IAsset",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "AssetUnregistered",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "erc20s",
+      "outputs": [
+        {
+          "internalType": "contract IERC20[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getRegistry",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "contract IERC20[]",
+              "name": "erc20s",
+              "type": "address[]"
+            },
+            {
+              "internalType": "contract IAsset[]",
+              "name": "assets",
+              "type": "address[]"
+            }
+          ],
+          "internalType": "struct Registry",
+          "name": "reg",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IMain",
+          "name": "main_",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IAsset[]",
+          "name": "assets_",
+          "type": "address[]"
+        }
+      ],
+      "name": "init",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "erc20",
+          "type": "address"
+        }
+      ],
+      "name": "isRegistered",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "main",
+      "outputs": [
+        {
+          "internalType": "contract IMain",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "refresh",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IAsset",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "register",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IAsset",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "swapRegistered",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "swapped",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "erc20",
+          "type": "address"
+        }
+      ],
+      "name": "toAsset",
+      "outputs": [
+        {
+          "internalType": "contract IAsset",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IERC20",
+          "name": "erc20",
+          "type": "address"
+        }
+      ],
+      "name": "toColl",
+      "outputs": [
+        {
+          "internalType": "contract ICollateral",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract IAsset",
+          "name": "asset",
+          "type": "address"
+        }
+      ],
+      "name": "unregister",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
