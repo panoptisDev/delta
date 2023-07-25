@@ -56,3 +56,9 @@ Additionally, our approach (P2P Risk Transfer) has several advantages over other
 ### P2P Insurance vs P2P Risk Transfer?
 
 P2P insurance usually covers individual risks. As such, P2P insurance is built on the general assumption that damages within the collective are uncorrelated and that premiums of the unaffected insurants can be used to compensate the ones that have suffered losses. Delta insures large scale risks that will affect all insurance holders. Consequently, we need explicit roles in accordance with the individuals’ risk preferences. This is achieved by creating tranches with different seniorities and security guarantees. 
+
+
+
+# Judging Notes
+
+We've tried to imbibe a very design-friendly, user-first approach to this project. This is reflected in both the contracts as well as the frontend ([take a look](https://delta-mantle.vercel.app/)!). Our UI/UX is very intuitive and easy to use even for users unfamiliar with complex DeFi terminologies. We hope this encourages greater adoption of not just Delta, but Mantle as well. Delta is also *technically-rich*, with a lot of interesting features that is the culmination of my many years of research in the DeFi space. I actually encourage you to read through the contracts, especially our [capital-efficient Lending/Borrowing protocol](https://github.com/nilernts/delta/blob/dev/contracts/contracts/DeltaOpen.sol) -- it's *massive*, but I'm sure you'll enjoy it.
